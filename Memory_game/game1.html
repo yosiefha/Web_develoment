@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+    <link rel="stylesheet" href="game1.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="info">
+        <div>
+          <span class="label">Time:</span><span class="value">{{ time }} </span>
+        </div>
+        <div>
+          <span class="label">Turns:</span
+          ><span class="value">{{ turns }} </span>
+        </div>
+      </div>
+      <div class="cards">
+        <div
+          class="card"
+          v-for="card in cards"
+          :class="{ flipped: card.flipped, found: card.found }"
+          @click="flipCard(card)"
+        >
+          <div class="back"></div>
+          <div
+            class="front"
+            :style="{ backgroundImage: 'url(' + card.image + ')' }"
+          ></div>
+        </div>
+      </div>
+      <div class="splash" v-if="showSplash">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="title">You won!</div>
+          <div class="score">Score: {{ score }}</div>
+          <button class="newGame" @click="resetGame()">New game</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="game1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Card Game</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <div id="app" class="container">
+      <div id="heading" class="row">
+        <h1>Classic Memory Game, Assignment-5</h1>
+      </div>
+
+      <div class="d-flex flex-row justify-content-center py-3">
+        <div class="player p-3">
+          <span class="btn btn-info"
+            >Player1 :
+            <span
+              class="badge"
+              :class="finish ? 'badge-success' : 'badge-light'"
+              >{{ players.player1_score}}</span
+            >
+          </span>
+        </div>
+        <div class="turns p-3">
+          <span class="btn btn-info"
+            >Turns :
+            <span
+              class="badge"
+              :class="finish ? 'badge-success' : 'badge-light'"
+              >{{turns}}</span
+            >
+          </span>
+        </div>
+        <div class="totalTime p-3">
+          <span class="btn btn-info"
+            >Total Time :
+            <span
+              class="badge"
+              :class="finish ? 'badge-success' : 'badge-light'"
+              >{{min}} : {{sec}}</span
+            ></span
+          >
+        </div>
+        <div class="totalTime p-3">
+          <button class="btn btn-info" @click="reset" :disabled="!start">
+            Restart
+          </button>
+        </div>
+        <div class="player p-3">
+          <span class="btn btn-info"
+            >Player2 :
+            <span
+              class="badge"
+              :class="finish ? 'badge-success' : 'badge-light'"
+              >{{ players.player2_score}}</span
+            >
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <div id="deck" class="col-md-6 col-lg-6 col-xl-6 mx-auto">
+          <div class="row justify-content-md-center">
+            <div
+              v-for="card in  memoryCards"
+              class="col-auto mb-3 flip-container"
+              :class="{ 'flipped': card.isFlipped , 'matched' : card.isMatched }"
+              @click="flipCard(card)"
+            >
+              <div class="memorycard">
+                <div class="front border rounded shadow">
+                  <img width="100" height="100" src="images/css.jpg" />
+                </div>
+                <div class="back rounded border">
+                  <img
+                    width="100"
+                    height="100"
+                    :src="card.img"
+                    v-bind:alt="card"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="modal" v-if="players.player1">
+        <h1 v-if="players.player1">congrats</h1>
+        <p v-if="players.player1">Player 1</p>
+      </div>
+
+      <div class="modal" v-if="players.player2">
+        <h1 v-if="players.player2">Congrats!</h1>
+        <p v-if="players.player2">Player2 Won</p>
+      </div> -->
+
+      <!-- <b-button v-b-modal.modal-1>Launch demo modal</b-button> -->
+      <!-- <div id="modal" v-if="render">
+          <h1>Hello there</h1>         
+        </div> -->
+      <footer class="footer">
+        <div class="footerContainer">
+          <p class="copyright">© copy right 2022</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
