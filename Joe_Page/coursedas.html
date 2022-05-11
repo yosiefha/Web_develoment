@@ -1,0 +1,221 @@
+<html>
+  <head>
+    <title>courses & projects</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+    <script src="coursedas.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid pt-1 pb-1">
+      <div class="container mt-3 mb-3 pt-2 pb-2">
+        <div class="row gy-2">
+          <div class="col-md-3 bg-secondary text-center py-2 first">
+            <div>
+              <!-- <img
+                src="luwam.png"
+                style="max-width: 50%"
+                alt="img"
+                class="rounded-circle"
+              /> -->
+              <div class="row">
+                <div>
+                  <h5 class="pt-5">where to work</h5>
+                  <button class="btn mt-3" id="pro">Project</button>
+                  <button class="btn mt-3" id="cor">Course</button>
+                </div>
+                <input
+                  type="text"
+                  class="form-control mx-2"
+                  id="typeOf"
+                  name="typeOf"
+                  disabled
+                  readonly
+                />
+              </div>
+            </div>
+            <div class="my-5">
+              <h2>Luwam Paulos</h2>
+              <p>Full Stack Developer</p>
+            </div>
+            <div class="my-5">
+              <span
+                ><a href="https://www.linkedin.com/in/luwam-paulos-a71b56184">
+                  <i class="fa fa-linkedin"></i> </a
+              ></span>
+              <span
+                ><a
+                  href="https://mail.google.com/mail/u/6/?ogbl#inbox?compose=new"
+                >
+                  <i class="fa fa-envelope"></i> </a
+              ></span>
+            </div>
+            <a href="contact.html"> Hire Me</a>
+          </div>
+          <div class="col-md-8 second">
+            <div class="row text-center text-success font-weight-bold">
+              <h2>Courses & Projects</h2>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-lg-2 pt-2">
+                <div>
+                  <!-- <div class="row">
+                    <div>
+                      <h5 class="pt-5">where to work</h5>
+                      <button class="btn mt-3" id="pro">Project</button>
+                      <button class="btn mt-3" id="cor">Course</button>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control mx-2"
+                      id="typeOf"
+                      name="typeOf"
+                      disabled
+                      readonly
+                    />
+                  </div> -->
+                  <h5 class="pt-5">what to do</h5>
+                  <button class="btn mx-3 mt-3" id="ccreate">create</button>
+                  <button class="btn mx-3 mt-3" id="cupdate">update</button>
+                  <button class="btn mx-3 mt-3" id="cdelete">delete</button>
+                </div>
+              </div>
+              <div class="col-lg-10">
+                <div id="formdiv">
+                  <form name="myForm" class="pt-4">
+                    <div id="csearchDiv" class="input-group mb-3 ml-5">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="cSearch"
+                        name="cSearch"
+                        placeholder="Search"
+                        required
+                        disabled
+                      />
+
+                      <input
+                        type="text"
+                        class="form-control mx-2"
+                        id="cfound"
+                        name="cfound"
+                        disabled
+                        readonly
+                      />
+                    </div>
+                    <div id="cformdiv">
+                      <div id="a">
+                        <div class="mb-3 ml-5">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="cName"
+                            name="cName"
+                            placeholder="name"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3 ml-5">
+                          <input
+                            type="date"
+                            class="form-control"
+                            id="cDate"
+                            name="cDate"
+                            placeholder="date taken"
+                            required
+                          />
+                        </div>
+
+                        <div class="mb-3 ml-5">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="cLink"
+                            name="cLink"
+                            placeholder="Link for more information"
+                          />
+                        </div>
+                        <div class="mb-3 ml-5">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="chard"
+                            name="chard"
+                            placeholder="hardness"
+                            disabled
+                          />
+                        </div>
+                      </div>
+                      <div id="b">
+                        <textarea
+                          class="form-control"
+                          id="cInfo"
+                          name="cInfo"
+                          placeholder="Information"
+                          cols="40"
+                          rows="10"
+                          required
+                        ></textarea>
+                        <button
+                          name="action"
+                          class="form-control mb-3 mt-4 btn"
+                          id="action"
+                        ></button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1 bg-secondary text-light third">
+            
+            <a href="index.html" data-toggle="tooltip" title="Home"
+              ><div><i class="fa fa-home fa-2x mt-2"></i></div
+            ></a>
+            <a href="aboutMe.html" data-toggle="tooltip" title="About Me"
+              ><div><i class="fa fa-question fa-2x mt-2"></i></div
+            ></a>
+            <a href="course.html" data-toggle="tooltip" title="Courses"
+              ><div><i class="fa fa-book fa-2x mt-2"></i></div
+            ></a>
+            <a href="project.html" data-toggle="tooltip" title="Projects"
+              ><div><i class="fa fa-laptop fa-2x mt-2"></i></div
+            ></a>
+            <a href="skill.html" data-toggle="tooltip" title="Skill"
+              ><div><i class="fas fa-brain fa-2x mt-2"></i></div
+            ></a>
+            <a href="contact.html" data-toggle="tooltip" title="Contact"
+              ><div><i class="fa fa-phone fa-2x mt-2"></i></div
+            ></a>
+            <a href="admin.html" data-toggle="tooltip" title="Administrator"
+              ><div><i class="fas fa-user-lock fa-2x mt-2"></i></div
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

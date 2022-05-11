@@ -1,0 +1,146 @@
+.container-fluid {
+  height: 100%;
+  background-image: url("6.jpg");
+}
+
+.container {
+  color: rgb(15, 26, 14);
+  font-weight: 800;
+  height: 90vh;
+}
+.col-lg-3 a,
+.col-lg-10 a {
+  color: black;
+}
+
+.first,
+.third {
+  background-color: rgb(68, 68, 68);
+  padding-top: 5%;
+}
+.second {
+  background-color: rgb(202, 130, 52);
+  padding-top: 2%;
+}
+.first {
+  color: rgb(10, 241, 10);
+}
+.second h2 {
+  text-transform: uppercase;
+}
+.first a {
+  color: rgb(10, 241, 10);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+h2 {
+  color: black;
+}
+h5 {
+  text-align: center;
+  font-weight: 900;
+}
+.btn {
+  background-color: rgb(68, 68, 68);
+  color: rgb(10, 241, 10);
+}
+
+.conInfo {
+  color: black;
+  text-align: center;
+  font-size: large;
+}
+.conInfo + div {
+  color: rgb(25, 100, 25);
+  text-align: center;
+}
+.first span {
+  color: lightseagreen;
+}
+.fa,
+.fas {
+  color: rgb(10, 241, 10);
+}
+
+.pSolving > .per {
+  width: 85%;
+  background-color: rgb(48, 48, 85);
+}
+
+.math > .per {
+  width: 95%;
+  background-color: rgb(48, 48, 85);
+}
+.skills {
+  background-color: white;
+  width: 90%;
+  margin: auto;
+}
+.html .per {
+  width: 95%;
+  background-color: rgb(187, 66, 151);
+}
+.css .per {
+  width: 90%;
+  background-color: rgb(187, 66, 151);
+}
+.java .per {
+  width: 70%;
+  background-color: rgb(96, 97, 19);
+}
+.js .per {
+  width: 90%;
+  background-color: rgb(48, 48, 85);
+}
+.team .per {
+  width: 90%;
+  background-color: rgb(48, 48, 85);
+}
+.sbox {
+  text-align: center;
+}
+.skills div {
+  text-align: right;
+  color: white;
+}
+.courseInfo {
+  display: none;
+  color: rgb(17, 109, 17);
+}
+.courseName:hover + .courseInfo {
+  display: block;
+}
+.second a {
+  text-decoration: none;
+  color: rgb(15, 26, 14);
+}
+#projectparentdiv .courseName {
+  color: rgb(15, 26, 14);
+  font-weight: 800;
+}
+.actionsAdmin {
+  color: rgb(58, 21, 58);
+  font-weight: 900;
+  font-size: x-large;
+}
+.fa-linkedin {
+  color: rgb(10, 241, 10);
+}
+.car-img {
+  width: 100%;
+}
+.big {
+  width: 50vw;
+  height: 40vh;
+}
+/* .bs-tooltip-auto[x-placement^="bottom"] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: #f00; /* Red 
+} */
+
+/* #cformDiv {
+  display: none;
+}
+#csearchDiv {
+  display: none;
+} */

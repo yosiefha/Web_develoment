@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <title>my courses</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+    <script src="course.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid pt-3 pb-3">
+      <div class="container">
+        <div class="row gy-2">
+          <div class="col-lg-3 bg-secondary text-center py-5 first">
+            <div>
+              <img
+                src="Joe.jpg"
+                style="max-width: 50%"
+                alt="img"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="my-5">
+              <h2>Yosief H. Abraham</h2>
+              <p>Python Developer/Data Scientist/Machine learning Engineer</p>
+            </div>
+            <div class="my-5">
+              <span
+                ><a
+                  href="https://www.linkedin.com/in/yosief-h-abraham-b87333154/"
+                >
+                  <i class="fa fa-linkedin"></i> </a
+              ></span>
+              <span
+                ><a
+                  href="https://mail.google.com/mail/u/6/?ogbl#inbox?compose=new"
+                >
+                  <i class="fa fa-envelope"></i> </a
+              ></span>
+            </div>
+            <a href="contact.html" style="color: rgb(10, 241, 10)"> Hire Me</a>
+          </div>
+          <div class="col-lg-8 text-center course second">
+            <div class="row text-center">
+              <h2>Courses</h2>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 fsdiv">
+                <button class="filtersort btn" id="sortcourse">
+                  date ascending
+                </button>
+              </div>
+
+              <div class="col-lg-4 offset-lg-4 fsdiv">
+                <button class="filtersort btn" id="sortdes">
+                  date desending
+                </button>
+              </div>
+            </div>
+            <hr />
+            <div class="courseinnerdiv" id="cordiv"></div>
+          </div>
+          <div class="col-lg-1 bg-secondary text-light third">
+            <a href="index.html" data-toggle="tooltip" title="Home"
+              ><div><i class="fa fa-home fa-2x mt-2"></i></div
+            ></a>
+            <a href="aboutMe.html" data-toggle="tooltip" title="About Me"
+              ><div><i class="fa fa-question fa-2x mt-2"></i></div
+            ></a>
+            <a href="course.html" data-toggle="tooltip" title="Courses"
+              ><div><i class="fa fa-book fa-2x mt-2"></i></div
+            ></a>
+            <a href="project.html" data-toggle="tooltip" title="Projects"
+              ><div><i class="fa fa-laptop fa-2x mt-2"></i></div
+            ></a>
+            <a href="skill.html" data-toggle="tooltip" title="Skill"
+              ><div><i class="fas fa-brain fa-2x mt-2"></i></div
+            ></a>
+            <a href="contact.html" data-toggle="tooltip" title="Contact"
+              ><div><i class="fa fa-phone fa-2x mt-2"></i></div
+            ></a>
+            <a href="admin.html" data-toggle="tooltip" title="Administrator"
+              ><div><i class="fas fa-user-lock fa-2x mt-2"></i></div
+            ></a>
+          </div>
+          <!--third col closing-->
+        </div>
+        <!--whole box closing-->
+      </div>
+      <!--container closing-->
+    </div>
+  </body>
+</html>
